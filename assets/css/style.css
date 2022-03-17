@@ -1,0 +1,27 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Nav and Timer styling*/
+.high-scores {
+    padding-left: 2rem;
+}
+
+.timer {
+    float: right;
+    padding-right: 2rem;
+    margin-top: -1rem;
+}
+
+/* content styling*/
+h1 {
+    margin-top: 20%;
+}
+
+h1, p, .button {
+text-align: center;
+}
+
+.container {
+    background-color: yellow;
+}
