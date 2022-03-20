@@ -5,23 +5,73 @@ body{
 /* Nav and Timer styling*/
 .high-scores {
     padding-left: 2rem;
+    padding-top: 3rem;
+    text-decoration: underline;
+    font-size: large;
 }
 
 .timer {
     float: right;
     padding-right: 2rem;
     margin-top: -1rem;
+    font-size: large;
+}
+
+#timer {
+    font-size: 30px;
+}
+
+#initials{
+    text-align:center;
+    margin:auto;
+
+}
+.initials{
+    text-align:center;
+    margin:auto;
+    padding-bottom:10px;
+}
+.answers{
+    text-align:center;
+    margin:auto;
+    padding-bottom:10px;
 }
 
 /* content styling*/
-h1 {
-    margin-top: 20%;
-}
+
 
 h1, p, .button {
 text-align: center;
+padding-bottom: 1rem;
 }
 
 .container {
-    background-color: yellow;
+    position: relative;
+    top: 10rem;
+    background-color: lightgray;
+    width: 40%;
+    margin: auto;
+    float: 5rem;
+    border: 3px solid black;
+    border-radius: 20px;
+    
+}
+
+/* button styling */
+button {
+    width: 100px;
+    height: 40px;
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    transform: scale(1.25);
+    background-color: green;
+}
+
+/* hidden elements */
+.hidden {
+    display: none;
 }

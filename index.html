@@ -8,20 +8,18 @@
     <title>Coding Quiz</title>
 </head>
 <body>
-<section>
-    
-    <!--high scores-->
+<section class="top-line">
+     <!--high scores-->
     <div class="top-line">
-        <nav class="high-scores" id="scores"> View high scores</nav>    
-    
+           <nav class="high-scores" id="scoresButton"><a href="#">View high scores</a></nav>    
         <!--Timer-->
-    <p class="timer" id="timer">Replace with Countdown</p>
+    <p class="timer"><span id="timer">60</span> seconds remaining</p>
     </div>
 
 </section>
     
     <!--Header-->
-<section class="container" id="content">
+<section class="container" id="main">
     <h1>Coding Quiz Challenge</h1>
     
     <!--Instructions-->
@@ -29,9 +27,36 @@
         Try to answer the following code-related questions within the time limit.
          <br>Keep in mind that incorrect answers will penalize your time by ten seconds!
         </p>
+        <div class="initials">
+            <input type="text" id="initials" placeholder="Your Initials">
+        </div>
    
         <!--Start Button-->
-    <div class="button" id="start-button"><button>Start Quiz</button></div>
+    <div class="button" id="startButton"><button>Start Quiz</button></div>
+</section>
+
+<!--Questions-->
+<section class="container hidden" id="quiz">
+    <h1 id="questionNumber"></h1>
+    
+        <p id="question"></p>
+        <div class="answers">
+            <select id="answer"></select>
+        </div>
+        <!--submitButton-->
+    <div class="button" id="submitButton"><button>Submit Answer</button></div>
+</section>
+    <!--High Score-->
+
+<section class="container hidden" id="highScores">
+    <h1>High Scores</h1>
+    
+    <p id="yourScore"></p>
+
+    <ol id="highScoreList"></ol>
+   
+        <!--Return Button-->
+    <div class="button" id="returnButton"><button>Return To Home</button></div>
 </section>
     
 
